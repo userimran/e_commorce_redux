@@ -3,6 +3,8 @@ import Table from 'react-bootstrap/Table'
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { DLT , ADD, REMOVE} from '../redux/action/actions';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cardsdetails = () => {
   const [data, setData] = useState([])
@@ -79,10 +81,9 @@ dispatch(REMOVE(item))
             )
           })
         }
-        <section className='container mt-3'>
-
-        </section>
+        <ToastContainer/>
       </div>
+      
     </>
   )
 }

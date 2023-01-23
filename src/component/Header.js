@@ -10,6 +10,7 @@ import { Table } from 'react-bootstrap';
 import { NavigationOutlined } from '@mui/icons-material';
 import { DLT } from '../redux/action/actions';
 
+
 function Header() {
     const [price, setPrice] = useState(0)
     console.log(price)
@@ -119,6 +120,7 @@ function Header() {
                     }
 
                 </Menu>
+              
             </Navbar>
         </>
     )
