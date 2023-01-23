@@ -5,7 +5,8 @@ import Cardsdata from './Cardsdata'
 import "./style.css"
 import { useDispatch } from 'react-redux';
 import { ADD } from '../redux/action/actions';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cards = () => {
   const [data, setData] = useState(Cardsdata);
@@ -43,6 +44,7 @@ const Cards = () => {
         }
 
       </div>
+      <ToastContainer/>
 
     </div>
   )
