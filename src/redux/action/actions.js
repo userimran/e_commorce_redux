@@ -11,7 +11,7 @@ export const ADD = (item) => {
 
 // remove item
 export const DLT = (id) => {
-    toast.warning("Relete Item Succesfully!")
+    toast.warning("Delete Item Succesfully!")
     return {
         type: "RMV_CART",
         payload: id
